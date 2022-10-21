@@ -1,4 +1,4 @@
-import javax.swing.*;
+/* import javax.swing.*;
 import java.awt.*;
 
 class GridFrame extends JFrame {
@@ -19,3 +19,4 @@ class GridFrame extends JFrame {
       new GridFrame();
   }
 }
+ */

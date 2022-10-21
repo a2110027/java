@@ -28,15 +28,16 @@ class Lesson {
     }
     System.out.println("----------");  
   }
-  void sort_id(){
+  public void sort_id(){
     int i,j;
-
     for(i=max;i>1;i--){
       for(j=1;j<i;j++){
         String t1 = st[i].getId();
         String t2 = st[i-1].getId();
         if(t1.compareTo(t2) > 0){
-
+//          String x = st[i].id;
+          st[i-1] = st[i];
+          //st[i] = x;
         }
       }
     }
@@ -81,7 +82,6 @@ class main7{
     pro.add(new Student("012200","Dentsu Taro",80));
     pro.add(new Student("012205","Uec Jiro",54));
     pro.add(new Student("012207","Chofu Saburo",70));
-
     pro.print();
   }
 }

@@ -2,7 +2,6 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-
 class ButtonPanel extends JPanel implements ActionListener{
   // label は，Button1Listener から参照できるようにします．
   // 内部クラスからは，そのクラスを含んでいる外部のクラスの
@@ -11,7 +10,6 @@ class ButtonPanel extends JPanel implements ActionListener{
   private JButton b1 = new JButton();
   private JButton b2 = new JButton();
   private JButton b3 = new JButton();
-
   ButtonPanel(){
     b1 = new JButton("Button 1");
     b2 = new JButton("Button 2");
@@ -34,7 +32,6 @@ class ButtonPanel extends JPanel implements ActionListener{
     } 
   }
 }
-
 class TestButton extends JFrame{
   public TestButton(){
     ButtonPanel b=new ButtonPanel();
@@ -49,13 +46,11 @@ class TestButton extends JFrame{
   }
 } */
 
-
 /* 
 //  2番目
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-
 class ButtonPanel extends JPanel implements ActionListener{
   // label は，Button1Listener から参照できるようにします．
   // 内部クラスからは，そのクラスを含んでいる外部のクラスの
@@ -64,7 +59,6 @@ class ButtonPanel extends JPanel implements ActionListener{
   private JButton b1 = new JButton("Button 1");
   private JButton b2 = new JButton("Button 2");
   private JButton b3 = new JButton("Button 3");
-
   ButtonPanel(){
     b1.setActionCommand("1");
     b2.setActionCommand("2");
@@ -76,7 +70,6 @@ class ButtonPanel extends JPanel implements ActionListener{
     setLayout(new GridLayout(2,2));
     add(b1); add(b2); add(b3); add(label);
   }
-
   public void actionPerformed(ActionEvent e){
     String es=e.getActionCommand();
     if (es.equals("1")){

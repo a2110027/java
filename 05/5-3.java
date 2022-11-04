@@ -1,6 +1,5 @@
 /* import javax.swing.*;
 import java.awt.*;
-
 class RectPanel extends JPanel {
   public void paintComponent(Graphics g) {
     super.paintComponent(g);

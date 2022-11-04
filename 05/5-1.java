@@ -1,4 +1,4 @@
-import java.awt.*;
+/* import java.awt.*;
 import javax.swing.*;
  
 class CombiFrame extends JFrame {
@@ -42,4 +42,4 @@ class CombiFrame extends JFrame {
   public static void main(String argv[]) {
     new CombiFrame();
   }
-}
+} */

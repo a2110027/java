@@ -2,7 +2,7 @@
 import java.awt.*;
 import java.awt.event.*;
 
-class CirclePanel extends JPanel implements MouseListener {
+class CirclePanel extends JPanel implements MouseListener,MouseMotionListener {
   private int radius =5;         // 円の半径
   private Color color=Color.red; // 円の色
   private int   x[],y[],r[];     // すべての丸の位置と半径を記録する位置を配列
@@ -16,6 +16,7 @@ class CirclePanel extends JPanel implements MouseListener {
     r=new int[MAX];
     c=new Color[MAX];
     this.addMouseListener(this);
+    this.addMouseMotionListener(this);
   }
   public void paintComponent(Graphics g) {
     super.paintComponent(g);
@@ -39,6 +40,11 @@ class CirclePanel extends JPanel implements MouseListener {
   public void mouseReleased(MouseEvent e){ }
   public void mouseEntered(MouseEvent e) { }
   public void mouseExited(MouseEvent e)  { }
+
+  public void mouseDragged(MouseEvent e) {     
+    addCircle(e.getX(),e.getY());
+  }
+  public void mouseMoved(MouseEvent e) { }
 
   void setRadius(int r){
     radius = r;

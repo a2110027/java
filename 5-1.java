@@ -3,9 +3,9 @@ import javax.swing.*;
  
 class CombiFrame extends JFrame {
   public CombiFrame(){
-    // JPanel‚ğ‚Q‚Â¶¬
+    // JPanelã‚’ï¼’ã¤ç”Ÿæˆ
     JPanel  p1=new JPanel(),p2=new JPanel();
-    // JPanel‚É“\‚è•t‚¯‚é‚½‚ß‚ÌJButton‚ğ5‚Â¶¬
+    // JPanelã«è²¼ã‚Šä»˜ã‘ã‚‹ãŸã‚ã®JButtonã‚’5ã¤ç”Ÿæˆ
     JButton b1=new JButton("1"),b2=new JButton("2");
     JButton b3=new JButton("3"),b4=new JButton("4");
     JButton b5=new JButton("5"),b6=new JButton("6");
@@ -14,27 +14,27 @@ class CombiFrame extends JFrame {
     JButton b11=new JButton("<html><span style='font-size:12pt; color:blue; "+"background-color:yellow;'>11</span></html>"), b12=new JButton("<html><span style='font-size:12pt; color:blue; "+"background-color:yellow;'>12</span></html>");
     JButton b13=new JButton("<html><span style='font-size:12pt; color:blue; "+"background-color:yellow;'>13</span></html>"),b14=new JButton("<html><span style='font-size:12pt; color:blue; "+"background-color:yellow;'>14</span></html>");
     JButton b15=new JButton("<html><span style='font-size:12pt; color:blue; "+"background-color:yellow;'>15</span></html>");
-    // JFrame ‚ÌCENTER‚É“\‚è•t‚¯‚é‚½‚ß‚Ì•¡”s‚Ì•¶š“ü—Í‚Ì•”•i‚Ì
-    // JTextArea ‚ğ¶¬D
+    // JFrame ã®CENTERã«è²¼ã‚Šä»˜ã‘ã‚‹ãŸã‚ã®è¤‡æ•°è¡Œã®æ–‡å­—å…¥åŠ›ã®éƒ¨å“ã®
+    // JTextArea ã‚’ç”Ÿæˆï¼
     JTextArea t=new JTextArea(10,20);
 
     this.setTitle("Panel Combination");
-    // 2‚Â‚ÌJPanel‚ğ‚»‚ê‚¼‚êC3x1, 2x1 ‚ÌGridLayout‚Éİ’èD
+    // 2ã¤ã®JPanelã‚’ãã‚Œãã‚Œï¼Œ3x1, 2x1 ã®GridLayoutã«è¨­å®šï¼
     p1.setLayout(new GridLayout(1,10));
     p2.setLayout(new GridLayout(5,1));
-    // ƒ{ƒ^ƒ“‚ğ‚»‚ê‚¼‚ê‚ÌJPanel‚É“\•t‚¯
+    // ãƒœã‚¿ãƒ³ã‚’ãã‚Œãã‚Œã®JPanelã«è²¼ä»˜ã‘
     p1.add(b1); p1.add(b2); p1.add(b3);p1.add(b4);p1.add(b5);p1.add(b6);p1.add(b7);p1.add(b8);p1.add(b9);p1.add(b10);
     p2.add(b11); p2.add(b12);p2.add(b13);p2.add(b14);p2.add(b15);
     
-    // JButton‚ª3‚Â’£‚è•t‚¢‚½JPanel‚ğ¶C
-    // JButton‚ª2‚Â’£‚è•t‚¢‚½JPanel‚ğ‰E‚É“\‚è•t‚¯‚éD
+    // JButtonãŒ3ã¤å¼µã‚Šä»˜ã„ãŸJPanelã‚’å·¦ï¼Œ
+    // JButtonãŒ2ã¤å¼µã‚Šä»˜ã„ãŸJPanelã‚’å³ã«è²¼ã‚Šä»˜ã‘ã‚‹ï¼
     this.add(p1,BorderLayout.NORTH);
     this.add(p2,BorderLayout.WEST);
-    // ^‚ñ’†‚ÍCJTextArea
+    // çœŸã‚“ä¸­ã¯ï¼ŒJTextArea
     this.add(t,BorderLayout.CENTER);
  
-    // pack ‚Í JFrame‚ÌƒTƒCƒY‚ğ©“®İ’è‚·‚éƒƒ\ƒbƒhD
-    // this.setSize(300,200); ‚È‚Ç‚Ì‘ã‚í‚è
+    // pack ã¯ JFrameã®ã‚µã‚¤ã‚ºã‚’è‡ªå‹•è¨­å®šã™ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰ï¼
+    // this.setSize(300,200); ãªã©ã®ä»£ã‚ã‚Š
     this.pack(); 
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     this.setVisible(true);
